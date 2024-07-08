@@ -10,6 +10,8 @@
 }
 
 .screen {
+  overflow-x: auto;
+  white-space: nowrap;
   grid-column: span 4;
   text-align: right;
   font-size: 4rem;
