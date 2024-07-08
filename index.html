@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="calculator">
+      <div class="screen" id="screen">0</div>
+
+      <button id="C" class="C btn operator" onclick="clearScr()">C</button>
+      <button id="backspace" class="btn operator" onclick="backspace()">⌫</button>
+      <button class="/ btn operator" onclick="appendOperator('/')">/</button>
+      <button class="* btn operator" onclick="appendOperator('*')">*</button>
+      <button class="7 btn number" onclick="appendNum('7')">7</button>
+      <button class="8 btn number" onclick="appendNum('8')">8</button>
+      <button class="9 btn number" onclick="appendNum('9')">9</button>
+      <button class="- btn operator" onclick="appendOperator('-')">-</button>
+      <button class="4 btn number" onclick="appendNum('4')">4</button>
+      <button class="5 btn number" onclick="appendNum('5')">5</button>
+      <button class="6 btn number" onclick="appendNum('6')">6</button>
+      <button class="+ btn operator" onclick="appendOperator('+')">+</button>
+      <button class="1 btn number" onclick="appendNum('1')">1</button>
+      <button class="2 btn number" onclick="appendNum('2')">2</button>
+      <button class="3 btn number" onclick="appendNum('3')">3</button>
+      <button id="enter" class="= btn equals operator" onclick="calcResult()">=</button>
+      <button class="0 btn zero number" onclick="appendNum('0')">0</button>
+      <button class=". btn number" onclick="appendDot()">.</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

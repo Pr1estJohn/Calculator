@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Camcode", sans-serif;
+}
+
+@font-face {
+  font-family: Camcode;
+  src: url(fonts/Camcode.woff);
+}
+
+.screen {
+  grid-column: span 4;
+  text-align: right;
+  font-size: 4rem;
+  color: aliceblue;
+  background-color: #213155;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.operator {
+  background-color: #187d99;
+  color: aliceblue;
+}
+
+.number {
+  background-color: #213155;
+  color: aliceblue;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1px;
+  height: 500px;
+  width: 350px;
+  background-color: #475a69;
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.equals {
+  grid-row: span 2;
+  background-color: #de8423;
+}
