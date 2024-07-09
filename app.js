@@ -27,12 +27,16 @@ function appendOperator(operator) {
 }
 
 function appendDot() {
-  var lastChar = screen.innerHTML.slice(-1);
+  var screenText = screen.innerHTML.trim();
+  var parts = screenText.split(/([+\-*/])/);
+  var lastPart = parts[parts.length - 1];
 
-  if (lastChar === "." || ["/", "*", "-", "+"].includes(lastChar)) {
-    screen.innerHTML += "0.";
-  } else if (!lastChar.includes(".")) {
-    screen.innerHTML += ".";
+  if (!lastPart.includes(".")) {
+    if (lastPart === "") {
+      screen.innerHTML += "0.";
+    } else {
+      screen.innerHTML += ".";
+    }
   }
 }
 
